@@ -3,14 +3,14 @@ module.exports = function( grunt ){
     browserify: {
       dist: {
         files: {
-          'dist/text-mode.js': 'src/browser.js'
+          'text-mode.js': 'src/browser.js'
         }
       }
     },
     uglify: {
       app: {
-        src: 'dist/text-mode.js',
-        dest: 'dist/text-mode-min.js'
+        src: 'text-mode.js',
+        dest: 'text-mode-min.js'
       }
     }
   });

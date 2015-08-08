@@ -1,0 +1,27 @@
+{
+  "name": "text-mode",
+  "main": "text-mode.js",
+  "version": "0.1.0",
+  "description": "Character based display for the DOM",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "textmode",
+    "text",
+    "terminal",
+    "console"
+  ],
+  "authors": [
+    "Nik Coughlin <nrkn.com@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nrkn/text-node",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
