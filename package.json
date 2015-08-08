@@ -2,6 +2,11 @@
   "name": "text-mode",
   "version": "0.1.0",
   "description": "Character based display for the DOM",
+  "homepage": "https://github.com/nrkn/text-node",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nrkn/text-node.git"
+  },  
   "main": "index.js",
   "scripts": {
     "build": "grunt"
