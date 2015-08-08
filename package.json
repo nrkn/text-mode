@@ -5,7 +5,7 @@
   "homepage": "https://github.com/nrkn/text-node",
   "repository": {
     "type": "git",
-    "url": "git://github.com/nrkn/text-node.git"
+    "url": "git://github.com/nrkn/text-mode.git"
   },  
   "main": "index.js",
   "scripts": {

@@ -1,8 +1,10 @@
-#Text Mode
+# Text Mode
 
-##Character based display for the DOM
+## Character based display for the DOM
 
 `npm install text-mode`
+
+`bower install text-mode`
 
 ```javascript
   //appends to document.body
@@ -38,3 +40,12 @@
     font: '24px monospace'
   });
 ```
+
+```javascript
+  //draw
+  var tm = new TextMode();
+  
+  tm.each( function( column, row ){
+    tm.set( column, row, '@', '#fff', '#39f' );
+  });
+```  
