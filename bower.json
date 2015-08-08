@@ -1,7 +1,7 @@
 {
   "name": "text-mode",
   "main": "text-mode.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Character based display for the DOM",
   "moduleType": [
     "globals"

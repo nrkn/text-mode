@@ -316,6 +316,10 @@ var template = require( 'dot' ).template;
 var charSize = require( './char-size' );
 
 function TextMode( target, options ){
+  if( !( this instanceof TextMode )){
+    return new TextMode( target, options );
+  }  
+  
   var tm = this;
 
   var parent;
@@ -375,6 +379,16 @@ function TextMode( target, options ){
 
 TextMode.prototype.set = function( column, row, text, fore, back, className ){
   var tm = this;
+  
+  if( Array.isArray( column ) ){
+    var buffer = column;
+    
+    tm.each( function( x, y, i ){
+      tm.set( x, y, buffer[ i ].text, buffer[ i ].fore, buffer[ i ].back, buffer[ i ].className );
+    });
+    
+    return;
+  }
 
   var i = row * tm.columns + column;
 
@@ -430,6 +444,16 @@ TextMode.prototype.setClassName = function( column, row, className ){
 TextMode.prototype.get = function( column, row ){
   var tm = this;
 
+  if( typeof column !== 'number' ){
+    var buffer = [];
+    
+    tm.each( function( x, y, i ){
+      buffer[ i ] = tm.get( x, y );
+    });
+    
+    return buffer;
+  }
+  
   var i = row * tm.columns + column;
 
   return {

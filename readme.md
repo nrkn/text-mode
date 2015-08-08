@@ -49,3 +49,15 @@
     tm.set( column, row, '@', '#fff', '#39f' );
   });
 ```  
+
+```javascript  
+  //get
+  console.log( tm.get( 5, 5 ) );
+```  
+
+```javascript  
+  //buffer
+  var buffer = tm.get();
+  
+  tm.set( buffer );
+```  

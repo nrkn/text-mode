@@ -1,6 +1,6 @@
 {
   "name": "text-mode",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Character based display for the DOM",
   "homepage": "https://github.com/nrkn/text-node",
   "repository": {
