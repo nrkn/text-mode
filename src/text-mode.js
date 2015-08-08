@@ -4,6 +4,10 @@ var template = require( 'dot' ).template;
 var charSize = require( './char-size' );
 
 function TextMode( target, options ){
+  if( !( this instanceof TextMode )){
+    return new TextMode( target, options );
+  }  
+  
   var tm = this;
 
   var parent;
