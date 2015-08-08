@@ -1,0 +1,1 @@
+window.TextMode = require( './text-mode' );
