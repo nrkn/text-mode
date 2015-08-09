@@ -1,6 +1,6 @@
 'use strict';
 
-var template = require( 'dot' ).template;
+var template = require( './string-inject' );
 var charSize = require( './char-size' );
 
 function TextMode( target, options ){
@@ -188,11 +188,11 @@ TextMode.defaults = {
 var cache = {};
 
 var templates = {
-  style: template( '{{=it.selector}} { {{=it.rule}} }' ),
-  color: template( 'background: {{=it.back}}; color: {{=it.fore}};' ),
-  viewport: template( 'position: relative; width: {{=it.size.width}}px; height: {{=it.size.height}}px; font: {{=it.font}}' ),
-  tiles: template( 'position: absolute; line-height: {{=it.height}}px; width: {{=it.width}}px; height: {{=it.height}}px;' ),
-  tile: template( 'top: {{=it.top}}px; left: {{=it.left}}px;' )
+  style: template( '<%=selector%> { <%=rule%> }' ),
+  color: template( 'background: <%=back%>; color: <%=fore%>;' ),
+  viewport: template( 'position: relative; width: <%=size.width%>px; height: <%=size.height%>px; font: <%=font%>' ),
+  tiles: template( 'position: absolute; line-height: <%=height%>px; width: <%=width%>px; height: <%=height%>px;' ),
+  tile: template( 'top: <%=top%>px; left: <%=left%>px;' )
 };
 
 function newSheet(){

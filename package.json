@@ -1,12 +1,12 @@
 {
   "name": "text-mode",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Character based display for the DOM",
   "homepage": "https://github.com/nrkn/text-node",
   "repository": {
     "type": "git",
     "url": "git://github.com/nrkn/text-mode.git"
-  },  
+  },
   "main": "index.js",
   "scripts": {
     "build": "grunt"
@@ -19,9 +19,7 @@
   ],
   "author": "Nik Coughlin <nrkn.com@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "dot": "^1.0.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-browserify": "^4.0.0",
